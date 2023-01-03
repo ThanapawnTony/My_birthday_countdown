@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD countdown</title>
+    <link href="../source/style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h2>Countdown to my Birthday:</h2>
+    </div>
+
+    <div id="countdown-container">
+        <div id="demo"></div>
+        <script src="../script/index.js"></script>
+    </div>
+
+    <div>
+        <p>My Birthday is near, cant wait to grow older! <br> QR code for BcelOne below:</p>
+    </div>
+
+    <div id="audio-player">
+        <audio src="../audio/HOME - Resonance.mp3" id="audio" autoplay loop></audio>
+        <button id="play-btn">Play</button>
+        <button id="pause-btn">Pause</button>
+        <button id="stop-btn">Stop</button>
+        <input type="range" min="0" max="100" value="0" id="volume">
+        <label for="volume"></label>
+        <script src="../script/audio.js"></script>
+    </div>
+
+    <div>
+        <img src="../pic/qr.png">
+    </div>
+    
+</body>
+</html>
