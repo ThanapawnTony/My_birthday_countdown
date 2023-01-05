@@ -3,19 +3,22 @@
 }
 
 #demo {
-    font-size: 36px;
-    color: #ff0000;
+    font-size: 28px;
+    color: #acf046;
     display: inline-block;
     text-align: center;
-
+    border-radius: .32em;
+    line-height: 2;
 }
 
 body {
-    background-color: #e0e0e0;
+    background: #01192a;
+    background-image: radial-gradient(#032962,#16224c,#191c37,#171724,#111);
     font-family: var(--font-family);
     font-weight: 500;
     text-align: center;
     padding: 50px;
+    color: #fff;
 }
 
 .expired {
@@ -31,15 +34,16 @@ body {
 
 h2 {
     font-size: 24px;
-    color: #000000;
+    line-height: 1;
+    color: #66c0f4;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 18px;
-    color: #000000;
+    font-size: 16px;
+    color: #fff;
     margin-top: 20px;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .qr_img img {
@@ -51,4 +55,43 @@ p {
     max-width: 500px;
     max-height: 500px;
     border-radius: 15px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#contact-form input[type="submit"] {
+    appearance: none;
+    border: none;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+    #contact-form label,
+    #contact-form input,
+    #contact-form textarea {
+        width: 90%;
+    }
 }

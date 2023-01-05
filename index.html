@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BD countdown</title>
     <link href="./source/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header_img">
@@ -18,7 +19,7 @@
     </div>
 
     <div>
-        <p>My Birthday is near, cant wait to grow older! <br> QR code for BcelOne below:</p>
+        <p>Welcome to my birthday website! <br> I'm so excited to celebrate another year of life with friends and family.<br>Take a look around and join in the fun.<br> QR code for BcelOne below:</p>
     </div>
 
     <div id="audio-player">
@@ -28,6 +29,18 @@
 
     <div class="qr_img">
         <img src="./pic/qr.jpg">
+    </div>
+
+    <div>
+        <form id="contact-form" action="./script/sendData.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email" id="email" name="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Send">
+        </form>
     </div>
     
 </body>
